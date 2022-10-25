@@ -12,7 +12,7 @@ const router = express.Router();
 const path = require("path");
 const cors = require('cors');
 const corsOptions ={
-    origin:'https://dazzling-dango-d6d808.netlify.app', 
+    origin:'https://facebookforfriend.netlify.app', 
     credentials:true,            
     optionSuccessStatus:200
 }
