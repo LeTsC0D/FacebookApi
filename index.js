@@ -10,6 +10,13 @@ const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
 const router = express.Router();
 const path = require("path");
+const cors = require('cors');
+const corsOptions ={
+    origin:'https://dazzling-dango-d6d808.netlify.app', 
+    credentials:true,            
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
 
 //middleware
 app.use(express.json());
